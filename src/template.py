@@ -1,5 +1,6 @@
 # Import the email modules we'll need
 import pprint
+import json
 from email.parser import BytesParser, Parser
 from email.policy import default
 
@@ -57,5 +58,5 @@ templates.append(template)
 
 output = 'output.et'
 with open(output, 'w') as out:
-    out.write(str(templates))
+    out.write(json.dumps(templates))
 #print(str(eml.keys()))
