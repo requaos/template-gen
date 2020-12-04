@@ -1,0 +1,16 @@
+Date: Fri, 19 Oct 2012 12:22:49 -0700
+From: Some Guy <fake@email.com>
+MIME-Version: 1.0
+To: user@corporate.com
+Subject: It's an Email!
+Content-Type: multipart/mixed; boundary="Test-100"
+
+--Test-100
+Content-Type: text/plain; charset=us-ascii
+
+Section one
+--Test-100
+Content-Type: text/html; charset=us-ascii
+
+<html><body>Section two</body></html>
+--Test-100--
